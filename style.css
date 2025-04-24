@@ -2,11 +2,13 @@
     display: none;
 }
 
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     font-family: Inter, sans-serif;
     overflow-x: hidden;
+    height: 100%;
 }
 
 h1,
@@ -16,7 +18,7 @@ h3 {
 }
 
 .wrap {
-    /* width:min-content; */
+    min-height: 100vh;
 }
 
 /* Header section */
@@ -42,6 +44,9 @@ h3 {
         color: #FEC05D;
     }
 } */
+main {
+    flex: 1;
+}
 
 .donate-cta {
     background-color: #FEC05D;
@@ -114,7 +119,11 @@ nav ul {
 
     h1,
     p {
-        text-align: center;
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 2.3rem;
     }
 }
 
@@ -148,7 +157,7 @@ a.primary-cta {
 }
 
 .pachin-pic img {
-    
+
     max-width: 100%;
     max-height: 50vh;
     overflow: hidden;
@@ -158,9 +167,9 @@ a.primary-cta {
 
 .hadith-quotes {
     padding-top: 3em;
-    font-size: smaller;
-    font-style: italic;
+
 }
+
 
 .sec2 {
     background-color: #1A1A1A;
@@ -218,6 +227,35 @@ a.primary-cta {
     }
 }
 
+.square-list {
+    list-style-type: square;
+
+    li::marker {
+        color: #FEC05D;
+    }
+}
+
+.member-wrap {
+    background-color: #e0e0e0;
+    border-radius: 1em;
+    padding: .2em 0;
+    margin-bottom: 1.2em;
+
+}
+
+.member-container {
+    margin: 1em;
+
+    .member-name {
+        font-weight: bold;
+        font-size: larger;
+
+    }
+
+    p {
+        margin: 0;
+    }
+}
 
 /* Cost Req */
 
@@ -236,7 +274,8 @@ a.primary-cta {
 
     p {
         font-weight: bold;
-        font-size: 3rem;
+        font-size: 2.4rem;
+        color: #0c5f5f;
     }
 }
 
@@ -301,6 +340,13 @@ footer {
     border: 1px solid #1A1A1A;
 }
 
+.contact-social {
+
+    text-align: center;
+
+
+}
+
 .contact-wrap {
     margin: 2em;
 
@@ -313,11 +359,18 @@ footer {
 }
 
 #sns {
-    max-height: 50px;
-    padding-right: .5em;
+    max-height: 2em;
+    padding-right: 1em;
 }
 
+.via-email a {
+    text-decoration: none;
+    color: inherit;
 
+    &:hover {
+        text-decoration: underline;
+    }
+}
 
 .contact-list {
 
@@ -343,4 +396,75 @@ footer {
     }
 }
 
-@media screen {}
+.white-bg {
+    fill: #FEC05D;
+    color: #000000;
+    border: 2px solid red;
+}
+
+/* Transfer Infaq Section */
+
+.transfer-infaq {}
+
+.bank-container {
+    background-color: #e0e0e0;
+    margin: 2em;
+    padding: .2em 0;
+    border-radius: 1em;
+}
+
+.bank-container-isi {
+    margin: 2em;
+
+}
+
+.confirm-btn {
+
+    background: #FEC05D;
+    padding: 1em;
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+    border-radius: 1em;
+    margin: 3em 2em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    text-decoration: none;
+
+    img {
+        max-height: 2em;
+    }
+
+}
+
+#acc-number {
+    font-weight: bold;
+}
+
+.bold-txt {
+    font-weight: bold;
+}
+
+
+/* Gallery Images */
+
+.gallery-images {
+    margin: 2em;
+}
+
+.gallery-images img {
+    width: 100%;
+}
+
+caption {
+    text-decoration: none;
+}
+
+@media (min-width: 798px) {
+    .hero h1 {
+        text-align: left;
+        font-size: 3rem;
+    }
+}
