@@ -112,9 +112,10 @@ nav ul {
 }
 
 .hero {
-    height: 80vh;
+    
     /* border: 2px solid black; */
     margin: 2em;
+    margin-bottom: 5em;
     align-items: center;
 
     h1,
@@ -372,11 +373,29 @@ footer {
     }
 }
 
+.quotes-section {
+    height: 30vh;
+    align-items: center;
+    display: flex;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Gallery/front.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+    div {
+        margin: 2em;
+    }
+    p {
+        text-align: center;
+    }
+}
+
 .contact-list {
 
     list-style: square;
     padding-left: 1em;
-    /* border: 2px solid red; */
+
 
     .socmed {
         display: inline;
@@ -461,6 +480,18 @@ footer {
 caption {
     text-decoration: none;
 }
+
+/* Table Section */
+
+table {
+    #amount {
+        width: 30vh;
+    }
+}
+
+
+
+/* Media Section */
 
 @media (min-width: 798px) {
     .hero h1 {
